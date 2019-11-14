@@ -1,0 +1,649 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head id="j_idt2"><link type="text/css" rel="stylesheet" href="/iiss/javax.faces.resource/theme.css.xhtml?ln=primefaces-aristo" /><script type="text/javascript" src="/iiss/javax.faces.resource/jquery/jquery.js.xhtml?ln=primefaces&amp;v=6.2"></script><script type="text/javascript" src="/iiss/javax.faces.resource/jquery/jquery-plugins.js.xhtml?ln=primefaces&amp;v=6.2"></script><script type="text/javascript" src="/iiss/javax.faces.resource/core.js.xhtml?ln=primefaces&amp;v=6.2"></script><script type="text/javascript" src="/iiss/javax.faces.resource/components.js.xhtml?ln=primefaces&amp;v=6.2"></script><link type="text/css" rel="stylesheet" href="/iiss/javax.faces.resource/components.css.xhtml?ln=primefaces&amp;v=6.2" /><script type="text/javascript">if(window.PrimeFaces){PrimeFaces.settings.locale='ru';}</script>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta http-equiv="pragma" content="no-cache" />
+        <meta http-equiv="cache-control" content="no-cache" />
+        <meta http-equiv="expires" content="0" />
+
+        <script src="resources/js/jquery.min.js" type="text/javascript"></script>
+        <link rel="stylesheet" href="resources/css/bootstrap.min.css" />
+        <link href="resources/fonts/pt-sans/font.css" type="text/css" rel="stylesheet" />
+        <link rel="shortcut icon" type="image/x-icon" href="resources/images/favicon.ico" />
+        <link href="resources/css/template_styles.css" rel="stylesheet" />
+        <link href="resources/css/ips2.css" type="text/css" rel="stylesheet" />
+        <link href="resources/css/ips-doc-view.css" type="text/css" rel="stylesheet" />
+        <link href="resources/css/ips-table-stats.css" type="text/css" rel="stylesheet" />
+        <link href="resources/css/mainmenu_top.css" type="text/css" rel="stylesheet" />
+        <script src="resources/ips-custom.js" type="text/javascript"></script>
+        <script src="resources/ips-menulink.js" type="text/javascript"></script>
+        <link rel="stylesheet" href="resources/css/jquery-ui.css" />
+        <script src="resources/js/jquery-ui.min.js" type="text/javascript"></script>
+        <script src="resources/js/datepicker-ru.js" type="text/javascript"></script>
+
+        
+        <link rel="stylesheet" href="resources/js/fancybox/source/jquery.fancybox.css" type="text/css" media="screen" />
+        <script src="resources/js/fancybox/source/jquery.fancybox.pack.js?v=2.1.7" type="text/javascript"></script>
+
+        
+        <script src="resources/js/formStyler/jquery.formstyler.min.js" type="text/javascript"></script>
+        <link href="resources/js/formStyler/jquery.formstyler.css" rel="stylesheet" />
+        <link href="resources/js/formStyler/jquery.formstyler.theme.css" rel="stylesheet" />
+
+
+        <title>Информационно-поисковая система</title></head><body id="ips"><div id="header" class="container-fluid"><div class="cont"><div class="row"><div class="col-md-3 logo"><a href="/">
+                            <div>Федеральный институт<br/>промышленной<br/>собственности
+                            </div></a></div><div class="col-md-4 to-center"><div class="globaliconline"><div class="containermobile"><a href="mailto:fips@rupto.ru"><div class="mailico hico"></div></a><a href="/sitemap.php"><div class="sitemapico hico"></div></a></div><div class="separator"></div><div class="lang">
+<form id="j_idt26" name="j_idt26" method="post" action="/iiss/search_res.xhtml" enctype="application/x-www-form-urlencoded">
+<input type="hidden" name="j_idt26" value="j_idt26" />
+<script type="text/javascript" src="/iiss/javax.faces.resource/jsf.js.xhtml?ln=javax.faces"></script><a href="#" title="RU" onclick="mojarra.jsfcljs(document.getElementById('j_idt26'),{'j_idt26:j_idt27':'j_idt26:j_idt27'},'');return false" class="lnkSwitchToLang_RU">RU</a> <input type="hidden" name="javax.faces.ViewState" id="j_id1:javax.faces.ViewState:0" value="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" autocomplete="off" />
+</form></div>
+                             
+                            <div class="lang">
+<form id="j_idt31" name="j_idt31" method="post" action="/iiss/search_res.xhtml" enctype="application/x-www-form-urlencoded">
+<input type="hidden" name="j_idt31" value="j_idt31" />
+<a href="#" title="EN" onclick="mojarra.jsfcljs(document.getElementById('j_idt31'),{'j_idt31:j_idt32':'j_idt31:j_idt32'},'');return false" class="lnkSwitchToLang_EN">EN</a> <input type="hidden" name="javax.faces.ViewState" id="j_id1:javax.faces.ViewState:1" value="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" autocomplete="off" />
+</form></div>
+                            <script type="text/javascript" language="javascript">
+                                var lang = getParameterByName("lang");
+                                if ((lang === "en") || (lang === "EN")) {
+                                    $(".lnkSwitchToLang_EN").click();
+                                }
+                                else if ((lang === "ru") || (lang === "RU")) {
+                                    $(".lnkSwitchToLang_RU").click();
+                                }
+                            </script></div></div><div class="col-md-4"><div class="sr">
+                            <form class="search" action="/search/" method="get">
+                                <input placeholder="Поиск по сайту" name="q" type="text" value="" size="15" maxlength="50" />
+                                <input type="submit" value=" " />
+                            </form></div></div><div class="col-md-1 to-center">
+                        <a href="http://www.rupto.ru/"><div class="rightlogo">сайт Роспатента</div></a></div></div></div>
+            <div id="linkMenuDiv" style="   position: absolute;  display: none;"></div></div></body><div id="crumbs" class="container-fluid"><div class="row"><div class="col-md-12"><div class="cont"><a href="/">Главная</a><span class="sep">/</span><a href="/elektronnye-servisy/">Поиск</a><span class="sep">/</span><a href="/elektronnye-servisy/informatsionno-poiskovaya-sistema/">Поисковая система</a><span class="sep">/</span>Найденные документы</div></div></div></div><div id="secondpages" class="container-fluid"><div class="cont"><div class="row"><div id="mainpagecontent" class="col-md-9"><div class="megatitle" style="margin-bottom: 0px;"><div class="left">
+                            НАЙДЕННЫЕ ДОКУМЕНТЫ
+                        </div></div><div class="cont"><div class="globaltext"><div class="filter"><div class="search-fields"><div class="searchres w100 nomarginbottom infoblock standardBorderBottom">
+                                    <iframe src="components/search_res_print.xhtml" style="display:none;" name="frame"></iframe><span class="printico" onclick="frames['frame'].print()">Печать</span><div class="bigtit">
+                                        Всего найдено: <b>7459</b>
+                                           , доступны первые <b>4000</b></div><div class="unbigtit">
+                                        Время запроса: <b>0.4 сек.</b></div>
+                                    Выбранные поисковые базы (количество найденных документов):
+                                    <ul class="ul-search-res">
+                                            <li><b>Рефераты российских изобретений</b> (2590)</li>
+                                            <li><b>Заявки на российские изобретения</b> (3763)</li>
+                                            <li><b>Полные тексты российских изобретений из трех последних бюллетеней</b> (1057)</li>
+                                            <li><b>Формулы российских полезных моделей</b> (39)</li>
+                                            <li><b>Формулы российских полезных моделей из трех последних бюллетеней</b> (9)</li>
+                                            <li><b>Перспективные российские изобретения</b> (1)</li>
+                                    </ul>
+                                    <b>Поисковый запрос:</b>
+                                    <ul class="ul-search-res" style="word-wrap: break-word; max-width: 600px;">
+                                            <li>(86) Дата заявки PCT: 
+                                                <b>2016.01.01-2016.12.31</b>
+                                            </li>
+                                            <li>(98) Адрес для переписки: 
+                                                <b>москва</b>
+                                            </li>
+                                    </ul></div></div></div><div class="clear"></div>
+<form id="j_idt98" name="j_idt98" method="post" action="/iiss/search_res.xhtml" enctype="application/x-www-form-urlencoded">
+<input type="hidden" name="j_idt98" value="j_idt98" />
+<html xmlns="http://www.w3.org/1999/xhtml"><div class="modern-page-navigation"><span id="j_idt98:j_idt102" class="ui-commandlink ui-widget ui-state-disabled modern-page-previous">‹‹</span><span id="j_idt98:j_idt104" class="ui-commandlink ui-widget ui-state-disabled modern-page-previous">‹</span><span id="j_idt98:j_idt106:0:j_idt107" class="ui-commandlink ui-widget ui-state-disabled"><span class="modern-page-current modern-page-first ">1</span></span><a id="j_idt98:j_idt106:1:j_idt107" href="#" class="ui-commandlink ui-widget" onclick="PrimeFaces.ab({s:&quot;j_idt98:j_idt106:1:j_idt107&quot;,u:&quot;j_idt98&quot;});return false;"><span class=" ">2</span></a><a id="j_idt98:j_idt106:2:j_idt107" href="#" class="ui-commandlink ui-widget" onclick="PrimeFaces.ab({s:&quot;j_idt98:j_idt106:2:j_idt107&quot;,u:&quot;j_idt98&quot;});return false;"><span class=" ">3</span></a><a id="j_idt98:j_idt106:3:j_idt107" href="#" class="ui-commandlink ui-widget" onclick="PrimeFaces.ab({s:&quot;j_idt98:j_idt106:3:j_idt107&quot;,u:&quot;j_idt98&quot;});return false;"><span class=" ">4</span></a><a id="j_idt98:j_idt106:4:j_idt107" href="#" class="ui-commandlink ui-widget" onclick="PrimeFaces.ab({s:&quot;j_idt98:j_idt106:4:j_idt107&quot;,u:&quot;j_idt98&quot;});return false;"><span class=" ">5</span></a>
+        ...
+        <a id="j_idt98:j_idt292" href="#" class="ui-commandlink ui-widget" onclick="PrimeFaces.ab({s:&quot;j_idt98:j_idt292&quot;,u:&quot;j_idt98&quot;});return false;"><span class=" ">80</span></a><a id="j_idt98:j_idt109" href="#" class="ui-commandlink ui-widget modern-page-next" onclick="PrimeFaces.ab({s:&quot;j_idt98:j_idt109&quot;,u:&quot;j_idt98&quot;});return false;">›</a><a id="j_idt98:j_idt111" href="#" class="ui-commandlink ui-widget modern-page-next" onclick="PrimeFaces.ab({s:&quot;j_idt98:j_idt111&quot;,u:&quot;j_idt98&quot;});return false;">››</a>
+
+    <span class="toPage"><span class="toPageTitle">К странице:</span><input id="j_idt98:j_idt115" type="text" name="j_idt98:j_idt115" value="" class="toPageInputText" onkeyup="validatePaginatorValue(event,80, &quot;Не число&quot;, &quot;Страница вне диапазона&quot;)" onchange="PrimeFaces.ab({s:this,e:&quot;change&quot;,p:&quot;j_idt98:j_idt115&quot;});" /><input id="j_idt98:j_idt116" type="submit" name="j_idt98:j_idt116" value=" " style="background-image: url('/iiss/javax.faces.resource/images/arr-01.svg.xhtml');" class="toPageSubmit" onclick="PrimeFaces.ab({s:this,e:&quot;action&quot;,p:&quot;j_idt98:j_idt116&quot;,u:&quot;j_idt98&quot;});;return false" />
+    </span></div>
+</html><div class="clear"></div><div class="bgtable">
+<div class="table-responsive pub-table vtop notrhover">
+<div class="table">
+<div class="tr tit">
+<div class="th">
+<b>№</b>
+</div>
+<div class="th">
+<b>Номер документа</b>
+</div>
+<div class="th">
+<b>Дата публикации</b>
+</div>
+<div class="th">
+<b>Изображение</b>
+</div>
+<div class="th">
+<b>Название</b>
+</div>
+<div class="th">
+<b>Библ-ка</b>
+</div>
+</div>
+<a class="tr" id="fb4a6cdbb15cac98028630582a038f18" data-index="1" href="document.xhtml?faces-redirect=true&amp;id=fb4a6cdbb15cac98028630582a038f18">
+<div class="td">1.</div>
+<div class="td">2018111114</div>
+<div class="td">(02.10.2019)</div>
+<div class="td">
+<img src="http://www.fips.ru/Archive2/Image/RUPATAP/NEW2018/100000/110000/111000/2018111114-s.jpg"></div>
+<div class="td">ИСПОЛЬЗОВАНИЕ АДДИТИВНОЙ ТЕХНОЛОГИИ С АРМИРОВАНИЕМ ДЛЯ ПРОИЗВОДСТВА КОМПОЗИТНЫХ МАТЕРИАЛОВ</div>
+<div class="td">ЗИЗ</div>
+</a><a class="tr" id="a85d4def54f06bfb258c93166409700b" data-index="2" href="document.xhtml?faces-redirect=true&amp;id=a85d4def54f06bfb258c93166409700b">
+<div class="td">2.</div>
+<div class="td">2680710</div>
+<div class="td">(26.02.2019)</div>
+<div class="td">
+<img src="http://www.fips.ru/Archive2/Image/RUPAT/2000000/2600000/2680000/2680000/2680710-s.jpg"></div>
+<div class="td">СИСТЕМА И СПОСОБ ИДЕНТИФИКАЦИИ ОПРЕДЕЛЕНИЯ МЕСТОПОЛОЖЕНИЯ И АУТЕНТИФИКАЦИИ</div>
+<div class="td">НИЗ</div>
+</a><a class="tr" id="e4d85120bcd8d8d1e8254a84fdc04f82" data-index="3" href="document.xhtml?faces-redirect=true&amp;id=e4d85120bcd8d8d1e8254a84fdc04f82">
+<div class="td">3.</div>
+<div class="td">2017131875</div>
+<div class="td">(14.03.2019)</div>
+<div class="td">
+<img src="http://www.fips.ru/Archive2/Image/RUPATAP/NEW2017/100000/130000/131000/2017131875-s.jpg"></div>
+<div class="td">ТРЕХЪЯДЕРНЫЕ СОЕДИНЕНИЯ И ИХ ПРИМЕНЕНИЕ В МЕДИЦИНЕ</div>
+<div class="td">ЗИЗ</div>
+</a><a class="tr" id="ad94c6060561ed961bcc0abc0a1c729b" data-index="4" href="document.xhtml?faces-redirect=true&amp;id=ad94c6060561ed961bcc0abc0a1c729b">
+<div class="td">4.</div>
+<div class="td">2694814</div>
+<div class="td">(17.07.2019)</div>
+<div class="td">
+<img src="http://www.fips.ru/Archive2/Image/RUPAT/2000000/2600000/2690000/2694000/2694814-s.jpg"></div>
+<div class="td">ОБРАБОТКА ПРИОРИТЕТОВ В СИСТЕМЕ СВЯЗИ ProSe</div>
+<div class="td">НИЗ</div>
+</a><a class="tr" id="88823338bb468990cc25c87b2d8be2e2" data-index="5" href="document.xhtml?faces-redirect=true&amp;id=88823338bb468990cc25c87b2d8be2e2">
+<div class="td">5.</div>
+<div class="td">2678088</div>
+<div class="td">(23.01.2019)</div>
+<div class="td">
+<img src="http://www.fips.ru/Archive2/Image/RUPAT/2000000/2600000/2670000/2678000/2678088-s.jpg"></div>
+<div class="td">ПРОГРАММИРОВАНИЕ УВЕДОМЛЕНИЙ, ИСХОДЯ ИЗ ПОСЛЕДУЮЩЕЙ АКТИВНОСТИ ПОЛЬЗОВАТЕЛЯ</div>
+<div class="td">РИ</div>
+</a><a class="tr" id="358284b148aa328d325f20b50fad862c" data-index="6" href="document.xhtml?faces-redirect=true&amp;id=358284b148aa328d325f20b50fad862c">
+<div class="td">6.</div>
+<div class="td">2016135437</div>
+<div class="td">(12.03.2018)</div>
+<div class="td">
+<img src="http://www.fips.ru/Archive2/Image/RUPATAP/NEW2016/100000/130000/135000/2016135437-s.jpg"></div>
+<div class="td">СПОСОБ КОНТРОЛЯ ТРАНСПОРТНОГО СРЕДСТВА И ОТНОСЯЩИЕСЯ К НЕМУ УСТРОЙСТВА И СИСТЕМА</div>
+<div class="td">ЗИЗ</div>
+</a><a class="tr" id="110520dff4064ffa34046c507fb41133" data-index="7" href="document.xhtml?faces-redirect=true&amp;id=110520dff4064ffa34046c507fb41133">
+<div class="td">7.</div>
+<div class="td">2018111106</div>
+<div class="td">(07.10.2019)</div>
+<div class="td">
+<img src="http://www.fips.ru/Archive2/Image/RUPATAP/NEW2018/100000/110000/111000/2018111106-s.jpg"></div>
+<div class="td">ПРОИЗВОДНЫЕ КАРБОКСИЗАМЕЩЕННЫХ (ГЕТЕРО)АРОМАТИЧЕСКИХ КОЛЕЦ, СПОСОБ ИХ ПОЛУЧЕНИЯ И ПРИМЕНЕНИЕ</div>
+<div class="td">ЗИЗ</div>
+</a><a class="tr" id="349bfe33ff7c1bd8bbbd21e18266bbc2" data-index="8" href="document.xhtml?faces-redirect=true&amp;id=349bfe33ff7c1bd8bbbd21e18266bbc2">
+<div class="td">8.</div>
+<div class="td">2676232</div>
+<div class="td">(26.12.2018)</div>
+<div class="td">
+<img src="http://www.fips.ru/Archive2/Image/RUPAT/2000000/2600000/2670000/2676000/2676232-s.jpg"></div>
+<div class="td">МАЛОГАБАРИТНАЯ АНТЕННА И ВЫЧИСЛИТЕЛЬНОЕ УСТРОЙСТВО</div>
+<div class="td">НИЗ</div>
+</a><a class="tr" id="d4a89c8c15a759aafe7bfed5ed8a0f10" data-index="9" href="document.xhtml?faces-redirect=true&amp;id=d4a89c8c15a759aafe7bfed5ed8a0f10">
+<div class="td">9.</div>
+<div class="td">2018102748</div>
+<div class="td">(07.08.2019)</div>
+<div class="td">
+<img src="http://www.fips.ru/Archive2/Image/RUPATAP/NEW2018/100000/100000/102000/2018102748-s.jpg"></div>
+<div class="td">СПОСОБ ИЗГОТОВЛЕНИЯ МАТЕРИАЛА В ВИДЕ ЧАСТИЦ НА ОСНОВЕ МОЧЕВИНЫ, СОДЕРЖАЩЕГО ЭЛЕМЕНТАРНУЮ СЕРУ</div>
+<div class="td">ЗИЗ</div>
+</a><a class="tr" id="7ce926e51796f0a8bdfd5b72e6f000f8" data-index="10" href="document.xhtml?faces-redirect=true&amp;id=7ce926e51796f0a8bdfd5b72e6f000f8">
+<div class="td">10.</div>
+<div class="td">2694814</div>
+<div class="td">(17.07.2019)</div>
+<div class="td">
+<img src="http://www.fips.ru/Archive2/Image/RUPAT/2000000/2600000/2690000/2694000/2694814-s.jpg"></div>
+<div class="td">ОБРАБОТКА ПРИОРИТЕТОВ В СИСТЕМЕ СВЯЗИ ProSe</div>
+<div class="td">РИ</div>
+</a><a class="tr" id="bf7d4f8cab7c30e9925ae4673515d517" data-index="11" href="document.xhtml?faces-redirect=true&amp;id=bf7d4f8cab7c30e9925ae4673515d517">
+<div class="td">11.</div>
+<div class="td">2018101297</div>
+<div class="td">(15.07.2019)</div>
+<div class="td">
+<img src="http://www.fips.ru/Archive2/Image/RUPATAP/NEW2018/100000/100000/101000/2018101297-s.jpg"></div>
+<div class="td">БЕСПРОВОДНЫЕ СИСТЕМЫ ПИТАНИЯ И СПОСОБЫ, ПОДХОДЯЩИЕ ДЛЯ ЗАРЯДКИ НОСИМЫХ ЭЛЕКТРОННЫХ УСТРОЙСТВ</div>
+<div class="td">ЗИЗ</div>
+</a><a class="tr" id="2b27b3163df14205b6cf3d774e3d9887" data-index="12" href="document.xhtml?faces-redirect=true&amp;id=2b27b3163df14205b6cf3d774e3d9887">
+<div class="td">12.</div>
+<div class="td">2017145375</div>
+<div class="td">(10.07.2019)</div>
+<div class="td">
+<img src="http://www.fips.ru/Archive2/Image/RUPATAP/NEW2017/100000/140000/145000/2017145375-s.jpg"></div>
+<div class="td">ОЧКИ С МАГНИТНОЙ ДОРОЖКОЙ ДЛЯ ЭЛЕКТРОННОГО НОСИМОГО УСТРОЙСТВА</div>
+<div class="td">ЗИЗ</div>
+</a><a class="tr" id="18533500fc75df9de564946c249e7204" data-index="13" href="document.xhtml?faces-redirect=true&amp;id=18533500fc75df9de564946c249e7204">
+<div class="td">13.</div>
+<div class="td">2686262</div>
+<div class="td">(24.04.2019)</div>
+<div class="td">
+<img src="http://www.fips.ru/Archive2/Image/RUPAT/2000000/2600000/2680000/2686000/2686262-s.jpg"></div>
+<div class="td">СИСТЕМА И СПОСОБ ФОРМИРОВАНИЯ ЖЕЛЕЗНОДОРОЖНОГО СОСТАВА И УПРАВЛЕНИЯ ИМ</div>
+<div class="td">РИ</div>
+</a><a class="tr" id="fab1c437c9489d66810deb7703311797" data-index="14" href="document.xhtml?faces-redirect=true&amp;id=fab1c437c9489d66810deb7703311797">
+<div class="td">14.</div>
+<div class="td">2017127611</div>
+<div class="td">(07.03.2019)</div>
+<div class="td">
+<img src="http://www.fips.ru/Archive2/Image/RUPATAP/NEW2017/100000/120000/127000/2017127611-s.jpg"></div>
+<div class="td">КОМПЛЕКСНЫЕ СОЕДИНЕНИЯ И СОЛИ ПРОИЗВОДНЫХ ДИГИДРОПИРИМИДИНА И ИХ ПРИМЕНЕНИЕ В ФАРМАЦЕВТИЧЕСКИХ ПРЕПАРАТАХ</div>
+<div class="td">ЗИЗ</div>
+</a><a class="tr" id="7d4f433be3dd8ad2e4432d45cad20c58" data-index="15" href="document.xhtml?faces-redirect=true&amp;id=7d4f433be3dd8ad2e4432d45cad20c58">
+<div class="td">15.</div>
+<div class="td">2705908</div>
+<div class="td">(12.11.2019)</div>
+<div class="td">
+<img src="http://www.fips.ru/Archive2/Image/RUPAT/2000000/2700000/2700000/2705000/2705908-s.jpg"></div>
+<div class="td">СПОСОБ ОТБЕЛИВАНИЯ ЗУБОВ И/ИЛИ ИЗМЕНЕНИЯ ЦВЕТА ПЯТЕН НА ЗУБАХ</div>
+<div class="td">РИ</div>
+</a><a class="tr" id="83363d20623d66f3f3857878bc2b5456" data-index="16" href="document.xhtml?faces-redirect=true&amp;id=83363d20623d66f3f3857878bc2b5456">
+<div class="td">16.</div>
+<div class="td">2705923</div>
+<div class="td">(12.11.2019)</div>
+<div class="td">
+<img src="http://www.fips.ru/Archive2/Image/RUPAT/2000000/2700000/2700000/2705000/2705923-s.jpg"></div>
+<div class="td">СПОСОБ УПРАВЛЕНИЯ ИЗМЕНЕНИЕМ АМОРТИЗАЦИИ</div>
+<div class="td">РИ</div>
+</a><a class="tr" id="0b3d5cc7c3b37bfdac3a22b04608d98f" data-index="17" href="document.xhtml?faces-redirect=true&amp;id=0b3d5cc7c3b37bfdac3a22b04608d98f">
+<div class="td">17.</div>
+<div class="td">2705944</div>
+<div class="td">(12.11.2019)</div>
+<div class="td">
+<img src="http://www.fips.ru/Archive2/Image/RUPAT/2000000/2700000/2700000/2705000/2705944-s.jpg"></div>
+<div class="td">Женская прокладка с барьерными манжетами</div>
+<div class="td">РИ</div>
+</a><a class="tr" id="9017d51b713d89503c89c10b9544faed" data-index="18" href="document.xhtml?faces-redirect=true&amp;id=9017d51b713d89503c89c10b9544faed">
+<div class="td">18.</div>
+<div class="td">2705972</div>
+<div class="td">(12.11.2019)</div>
+<div class="td">
+<img src="http://www.fips.ru/Archive2/Image/RUPAT/2000000/2700000/2700000/2705000/2705972-s.jpg"></div>
+<div class="td">ПРЕОБРАЗОВАНИЕ ФИЛЬТРА С НАПОЛНИТЕЛЬНОЙ СРЕДОЙ В МЕМБРАННЫЙ ГРАВИТАЦИОННЫЙ ФИЛЬТР</div>
+<div class="td">РИ</div>
+</a><a class="tr" id="e9e95a946558eb6d83feff14b9a1de77" data-index="19" href="document.xhtml?faces-redirect=true&amp;id=e9e95a946558eb6d83feff14b9a1de77">
+<div class="td">19.</div>
+<div class="td">2705973</div>
+<div class="td">(12.11.2019)</div>
+<div class="td">
+<img src="http://www.fips.ru/Archive2/Image/RUPAT/2000000/2700000/2700000/2705000/2705973-s.jpg"></div>
+<div class="td">УЗЕЛ КОКСОВОГО БАРАБАНА И КОКСОДРОБИЛЬНОЙ УСТАНОВКИ ДЛЯ ПРИМЕНЕНИЯ В ЗАКРЫТОЙ ГАЗОНЕПРОНИЦАЕМОЙ СИСТЕМЕ ДЛЯ ПОЛУЧЕНИЯ ТОВАРНЫХ КУСКОВ НЕФТЯНОГО КОКСА ИЗ ОТВЕРЖДЕННОГО НЕФТЯНОГО КОКСА В КОКСОВОЙ БАРАБАННОЙ УСТАНОВКЕ, А ТАКЖЕ ЗАКРЫТАЯ ГАЗОНЕПРОНИЦАЕМАЯ СИСТЕМА, СОДЕРЖАЩАЯ ТАКОЙ УЗЕЛ</div>
+<div class="td">РИ</div>
+</a><a class="tr" id="9313c85005e0f8170660702ac774e3b5" data-index="20" href="document.xhtml?faces-redirect=true&amp;id=9313c85005e0f8170660702ac774e3b5">
+<div class="td">20.</div>
+<div class="td">2705974</div>
+<div class="td">(12.11.2019)</div>
+<div class="td">
+<img src="http://www.fips.ru/Archive2/Image/RUPAT/2000000/2700000/2700000/2705000/2705974-s.jpg"></div>
+<div class="td">УДАЛЕНИЕ АРОМАТИЧЕСКИХ УГЛЕВОДОРОДОВ ИЗ БЕДНОГО КИСЛОГО ГАЗОВОГО СЫРЬЯ ДЛЯ ПОЛУЧЕНИЯ СЕРЫ</div>
+<div class="td">РИ</div>
+</a><a class="tr" id="6afd251c3c1d2a292cdf78bff084a7be" data-index="21" href="document.xhtml?faces-redirect=true&amp;id=6afd251c3c1d2a292cdf78bff084a7be">
+<div class="td">21.</div>
+<div class="td">2705976</div>
+<div class="td">(12.11.2019)</div>
+<div class="td">
+<img src="http://www.fips.ru/Archive2/Image/RUPAT/2000000/2700000/2700000/2705000/2705976-s.jpg"></div>
+<div class="td">НАНОРАЗМЕРНОЕ ФУНКЦИОНАЛЬНОЕ СВЯЗУЮЩЕЕ</div>
+<div class="td">РИ</div>
+</a><a class="tr" id="a530d59a06407d5173948791a896fe89" data-index="22" href="document.xhtml?faces-redirect=true&amp;id=a530d59a06407d5173948791a896fe89">
+<div class="td">22.</div>
+<div class="td">2705979</div>
+<div class="td">(12.11.2019)</div>
+<div class="td">
+<img src="http://www.fips.ru/Archive2/Image/RUPAT/2000000/2700000/2700000/2705000/2705979-s.jpg"></div>
+<div class="td">ЧИСТЯЩЕЕ УСТРОЙСТВО, А ТАКЖЕ СПОСОБ ОЧИЩЕНИЯ ПОВЕРХНОСТИ</div>
+<div class="td">РИ</div>
+</a><a class="tr" id="dceffcd9feb65b063dd6257b62ee3882" data-index="23" href="document.xhtml?faces-redirect=true&amp;id=dceffcd9feb65b063dd6257b62ee3882">
+<div class="td">23.</div>
+<div class="td">2705988</div>
+<div class="td">(13.11.2019)</div>
+<div class="td">
+<img src="http://www.fips.ru/Archive2/Image/RUPAT/2000000/2700000/2700000/2705000/2705988-s.jpg"></div>
+<div class="td">УПАКОВКА, СОДЕРЖАЩАЯ ТЕКУЧЕЕ СОДЕРЖИМОЕ</div>
+<div class="td">РИ</div>
+</a><a class="tr" id="949cf26f4ae36e20ca72d456e7ec574d" data-index="24" href="document.xhtml?faces-redirect=true&amp;id=949cf26f4ae36e20ca72d456e7ec574d">
+<div class="td">24.</div>
+<div class="td">2705990</div>
+<div class="td">(13.11.2019)</div>
+<div class="td">
+<img src="http://www.fips.ru/Archive2/Image/RUPAT/2000000/2700000/2700000/2705000/2705990-s.jpg"></div>
+<div class="td">ВКЛАДЫШ ДЛЯ ПАЛЛЕТНОГО КОНТЕЙНЕРА</div>
+<div class="td">РИ</div>
+</a><a class="tr" id="753cf9c1fe336394d9615903e0526b10" data-index="25" href="document.xhtml?faces-redirect=true&amp;id=753cf9c1fe336394d9615903e0526b10">
+<div class="td">25.</div>
+<div class="td">2705994</div>
+<div class="td">(13.11.2019)</div>
+<div class="td">
+<img src="http://www.fips.ru/Archive2/Image/RUPAT/2000000/2700000/2700000/2705000/2705994-s.jpg"></div>
+<div class="td">ПРОСТЫЕ ПОЛИЭФИРАМИНЫ С НИЗКОЙ ТЕМПЕРАТУРОЙ ПЛАВЛЕНИЯ</div>
+<div class="td">РИ</div>
+</a><a class="tr" id="d35cb75ef63f1658d2d5ac5f6ac05c00" data-index="26" href="document.xhtml?faces-redirect=true&amp;id=d35cb75ef63f1658d2d5ac5f6ac05c00">
+<div class="td">26.</div>
+<div class="td">2705999</div>
+<div class="td">(13.11.2019)</div>
+<div class="td">
+<img src="http://www.fips.ru/Archive2/Image/RUPAT/2000000/2700000/2700000/2705000/2705999-s.jpg"></div>
+<div class="td">ГИГИЕНИЧНОЕ ПРИСПОСОБЛЕНИЕ ДЛЯ БАНКИ</div>
+<div class="td">РИ</div>
+</a><a class="tr" id="6e7da3e828246c238f2c4161d41323a2" data-index="27" href="document.xhtml?faces-redirect=true&amp;id=6e7da3e828246c238f2c4161d41323a2">
+<div class="td">27.</div>
+<div class="td">2706012</div>
+<div class="td">(13.11.2019)</div>
+<div class="td">
+<img src="http://www.fips.ru/Archive2/Image/RUPAT/2000000/2700000/2700000/2706000/2706012-s.jpg"></div>
+<div class="td">СТАТИСТИЧЕСКИЕ СОПОЛИМЕРЫ ВИНИЛАРОМАТИЧЕСКИХ СОЕДИНЕНИЙ И СОПРЯЖЕННЫХ ДИЕНОВ И СПОСОБ ИХ ПОЛУЧЕНИЯ</div>
+<div class="td">РИ</div>
+</a><a class="tr" id="8ae69847e3f276a3874007b9462a53fd" data-index="28" href="document.xhtml?faces-redirect=true&amp;id=8ae69847e3f276a3874007b9462a53fd">
+<div class="td">28.</div>
+<div class="td">2706025</div>
+<div class="td">(13.11.2019)</div>
+<div class="td">
+<img src="http://www.fips.ru/Archive2/Image/RUPAT/2000000/2700000/2700000/2706000/2706025-s.jpg"></div>
+<div class="td">СПОСОБ УПРАВЛЕНИЯ ДВИГАТЕЛЕМ И УСТРОЙСТВО УПРАВЛЕНИЯ ДВИГАТЕЛЕМ</div>
+<div class="td">РИ</div>
+</a><a class="tr" id="82d1c79bba31dc1e045f8491ad384e07" data-index="29" href="document.xhtml?faces-redirect=true&amp;id=82d1c79bba31dc1e045f8491ad384e07">
+<div class="td">29.</div>
+<div class="td">2706055</div>
+<div class="td">(13.11.2019)</div>
+<div class="td">
+<img src="http://www.fips.ru/Archive2/Image/RUPAT/2000000/2700000/2700000/2706000/2706055-s.jpg"></div>
+<div class="td">УСТРОЙСТВО И СПОСОБ ИЗГОТОВЛЕНИЯ ПЛАСТИКОВЫХ ПАКЕТОВ</div>
+<div class="td">РИ</div>
+</a><a class="tr" id="855c95f2044966ebe1c388b9d5ff23f8" data-index="30" href="document.xhtml?faces-redirect=true&amp;id=855c95f2044966ebe1c388b9d5ff23f8">
+<div class="td">30.</div>
+<div class="td">2706059</div>
+<div class="td">(13.11.2019)</div>
+<div class="td">
+<img src="http://www.fips.ru/Archive2/Image/RUPAT/2000000/2700000/2700000/2706000/2706059-s.jpg"></div>
+<div class="td">СПОСОБ ПОЛУЧЕНИЯ АММИАКА</div>
+<div class="td">РИ</div>
+</a><a class="tr" id="4e0298aeb408d16530238ef50558c16c" data-index="31" href="document.xhtml?faces-redirect=true&amp;id=4e0298aeb408d16530238ef50558c16c">
+<div class="td">31.</div>
+<div class="td">2705979</div>
+<div class="td">(12.11.2019)</div>
+<div class="td">
+<img src="http://www.fips.ru/Archive2/Image/RUPAT/2000000/2700000/2700000/2705000/2705979-s.jpg"></div>
+<div class="td">ЧИСТЯЩЕЕ УСТРОЙСТВО, А ТАКЖЕ СПОСОБ ОЧИЩЕНИЯ ПОВЕРХНОСТИ</div>
+<div class="td">НИЗ</div>
+</a><a class="tr" id="9d03a53ed9610f4d137011b1df56090d" data-index="32" href="document.xhtml?faces-redirect=true&amp;id=9d03a53ed9610f4d137011b1df56090d">
+<div class="td">32.</div>
+<div class="td">2705988</div>
+<div class="td">(13.11.2019)</div>
+<div class="td">
+<img src="http://www.fips.ru/Archive2/Image/RUPAT/2000000/2700000/2700000/2705000/2705988-s.jpg"></div>
+<div class="td">УПАКОВКА, СОДЕРЖАЩАЯ ТЕКУЧЕЕ СОДЕРЖИМОЕ</div>
+<div class="td">НИЗ</div>
+</a><a class="tr" id="86ae067fa7cea4f61f2f8c36199f82fd" data-index="33" href="document.xhtml?faces-redirect=true&amp;id=86ae067fa7cea4f61f2f8c36199f82fd">
+<div class="td">33.</div>
+<div class="td">2705994</div>
+<div class="td">(13.11.2019)</div>
+<div class="td">
+<img src="http://www.fips.ru/Archive2/Image/RUPAT/2000000/2700000/2700000/2705000/2705994-s.jpg"></div>
+<div class="td">ПРОСТЫЕ ПОЛИЭФИРАМИНЫ С НИЗКОЙ ТЕМПЕРАТУРОЙ ПЛАВЛЕНИЯ</div>
+<div class="td">НИЗ</div>
+</a><a class="tr" id="465241bd88e0ee76e5697ec6d15c7560" data-index="34" href="document.xhtml?faces-redirect=true&amp;id=465241bd88e0ee76e5697ec6d15c7560">
+<div class="td">34.</div>
+<div class="td">2705999</div>
+<div class="td">(13.11.2019)</div>
+<div class="td">
+<img src="http://www.fips.ru/Archive2/Image/RUPAT/2000000/2700000/2700000/2705000/2705999-s.jpg"></div>
+<div class="td">ГИГИЕНИЧНОЕ ПРИСПОСОБЛЕНИЕ ДЛЯ БАНКИ</div>
+<div class="td">НИЗ</div>
+</a><a class="tr" id="ac9ccbfe973e6397d5fbc35cf3150edc" data-index="35" href="document.xhtml?faces-redirect=true&amp;id=ac9ccbfe973e6397d5fbc35cf3150edc">
+<div class="td">35.</div>
+<div class="td">2706012</div>
+<div class="td">(13.11.2019)</div>
+<div class="td">
+<img src="http://www.fips.ru/Archive2/Image/RUPAT/2000000/2700000/2700000/2706000/2706012-s.jpg"></div>
+<div class="td">СТАТИСТИЧЕСКИЕ СОПОЛИМЕРЫ ВИНИЛАРОМАТИЧЕСКИХ СОЕДИНЕНИЙ И СОПРЯЖЕННЫХ ДИЕНОВ И СПОСОБ ИХ ПОЛУЧЕНИЯ</div>
+<div class="td">НИЗ</div>
+</a><a class="tr" id="64e6849291e6841392b7e8db09c53d51" data-index="36" href="document.xhtml?faces-redirect=true&amp;id=64e6849291e6841392b7e8db09c53d51">
+<div class="td">36.</div>
+<div class="td">2706025</div>
+<div class="td">(13.11.2019)</div>
+<div class="td">
+<img src="http://www.fips.ru/Archive2/Image/RUPAT/2000000/2700000/2700000/2706000/2706025-s.jpg"></div>
+<div class="td">СПОСОБ УПРАВЛЕНИЯ ДВИГАТЕЛЕМ И УСТРОЙСТВО УПРАВЛЕНИЯ ДВИГАТЕЛЕМ</div>
+<div class="td">НИЗ</div>
+</a><a class="tr" id="bcff370cd69c67dfc9ad5d0584108a1e" data-index="37" href="document.xhtml?faces-redirect=true&amp;id=bcff370cd69c67dfc9ad5d0584108a1e">
+<div class="td">37.</div>
+<div class="td">2706059</div>
+<div class="td">(13.11.2019)</div>
+<div class="td">
+<img src="http://www.fips.ru/Archive2/Image/RUPAT/2000000/2700000/2700000/2706000/2706059-s.jpg"></div>
+<div class="td">СПОСОБ ПОЛУЧЕНИЯ АММИАКА</div>
+<div class="td">НИЗ</div>
+</a><a class="tr" id="5b80a8b373fac0b7bb314587b94d5abb" data-index="38" href="document.xhtml?faces-redirect=true&amp;id=5b80a8b373fac0b7bb314587b94d5abb">
+<div class="td">38.</div>
+<div class="td">2706061</div>
+<div class="td">(13.11.2019)</div>
+<div class="td">
+<img src="http://www.fips.ru/Archive2/Image/RUPAT/2000000/2700000/2700000/2706000/2706061-s.jpg"></div>
+<div class="td">ЗАЩИТНЫЙ СЛОЙ ТЕПЛОИЗОЛЯЦИОННОЙ ПАНЕЛИ ДЛЯ СТРОИТЕЛЬСТВА C УЛУЧШЕННЫМИ СВОЙСТВАМИ СЦЕПЛЕНИЯ С ИЗОЛЯЦИОННЫМ СЛОЕМ</div>
+<div class="td">НИЗ</div>
+</a><a class="tr" id="9102da85279c59fee3a6560692caf47e" data-index="39" href="document.xhtml?faces-redirect=true&amp;id=9102da85279c59fee3a6560692caf47e">
+<div class="td">39.</div>
+<div class="td">2706062</div>
+<div class="td">(13.11.2019)</div>
+<div class="td">
+<img src="http://www.fips.ru/Archive2/Image/RUPAT/2000000/2700000/2700000/2706000/2706062-s.jpg"></div>
+<div class="td">РЕГЕНЕРАТОР КАТАЛИЗАТОРА И ИСПОЛЬЗУЕМЫЙ В НЕМ ОГОЛОВОК СТОЯКА</div>
+<div class="td">НИЗ</div>
+</a><a class="tr" id="5a0aff59918565365d934b9e55806ff1" data-index="40" href="document.xhtml?faces-redirect=true&amp;id=5a0aff59918565365d934b9e55806ff1">
+<div class="td">40.</div>
+<div class="td">2705944</div>
+<div class="td">(12.11.2019)</div>
+<div class="td">
+<img src="http://www.fips.ru/Archive2/Image/RUPAT/2000000/2700000/2700000/2705000/2705944-s.jpg"></div>
+<div class="td">Женская прокладка с барьерными манжетами</div>
+<div class="td">НИЗ</div>
+</a><a class="tr" id="afc6f0d442cd41d01b0b83b9a5fd81a6" data-index="41" href="document.xhtml?faces-redirect=true&amp;id=afc6f0d442cd41d01b0b83b9a5fd81a6">
+<div class="td">41.</div>
+<div class="td">2705960</div>
+<div class="td">(12.11.2019)</div>
+<div class="td">
+<img src="http://www.fips.ru/Archive2/Image/RUPAT/2000000/2700000/2700000/2705000/2705960-s.jpg"></div>
+<div class="td">УСОВЕРШЕНСТВОВАННОЕ УСТРОЙСТВО ГОРЕНИЯ ДЛЯ ПРОИЗВОДСТВА ГАЗОВЫХ СМЕСЕЙ</div>
+<div class="td">НИЗ</div>
+</a><a class="tr" id="9076612449a5fb212748bf8ad6389dee" data-index="42" href="document.xhtml?faces-redirect=true&amp;id=9076612449a5fb212748bf8ad6389dee">
+<div class="td">42.</div>
+<div class="td">2705974</div>
+<div class="td">(12.11.2019)</div>
+<div class="td">
+<img src="http://www.fips.ru/Archive2/Image/RUPAT/2000000/2700000/2700000/2705000/2705974-s.jpg"></div>
+<div class="td">УДАЛЕНИЕ АРОМАТИЧЕСКИХ УГЛЕВОДОРОДОВ ИЗ БЕДНОГО КИСЛОГО ГАЗОВОГО СЫРЬЯ ДЛЯ ПОЛУЧЕНИЯ СЕРЫ</div>
+<div class="td">НИЗ</div>
+</a><a class="tr" id="c330e97e88907dfeb6ce8dd8f688d8fb" data-index="43" href="document.xhtml?faces-redirect=true&amp;id=c330e97e88907dfeb6ce8dd8f688d8fb">
+<div class="td">43.</div>
+<div class="td">193758</div>
+<div class="td">(13.11.2019)</div>
+<div class="td">
+<img src="http://www.fips.ru/Archive2/Image/RUPM/100000/190000/193000/193758-s.jpg"></div>
+<div class="td">ВОЗДУХОНАГРЕВАТЕЛЬ С РАСПОЛОЖЕННОЙ ВВЕРХУ КАМЕРОЙ ГОРЕНИЯ НОВОЙ МОДЕЛИ</div>
+<div class="td">ФПМ</div>
+</a><a class="tr" id="f484567788d58fd855ca78c0bb57fbf1" data-index="44" href="document.xhtml?faces-redirect=true&amp;id=f484567788d58fd855ca78c0bb57fbf1">
+<div class="td">44.</div>
+<div class="td">2017126975</div>
+<div class="td">(20.02.2019)</div>
+<div class="td">
+<img src="http://www.fips.ru/Archive2/Image/RUPATAP/NEW2017/100000/120000/126000/2017126975-s.jpg"></div>
+<div class="td">МОДИФИЦИРОВАННЫЕ ПОСТТРАНСКРИПЦИОННЫЕ РЕГУЛЯТОРНЫЕ ЭЛЕМЕНТЫ ВИРУСОВ ГЕПАТИТА</div>
+<div class="td">ЗИЗ</div>
+</a><a class="tr" id="6983cd88f7b50f6113c9d9166654b766" data-index="45" href="document.xhtml?faces-redirect=true&amp;id=6983cd88f7b50f6113c9d9166654b766">
+<div class="td">45.</div>
+<div class="td">2018101319</div>
+<div class="td">(17.07.2019)</div>
+<div class="td">
+<img src="http://www.fips.ru/Archive2/Image/RUPATAP/NEW2018/100000/100000/101000/2018101319-s.jpg"></div>
+<div class="td">ВРАЩАЮЩИЙСЯ АНОСКОП</div>
+<div class="td">ЗИЗ</div>
+</a><a class="tr" id="a7563e3a92db211c194f260f79cd33b3" data-index="46" href="document.xhtml?faces-redirect=true&amp;id=a7563e3a92db211c194f260f79cd33b3">
+<div class="td">46.</div>
+<div class="td">2018101713</div>
+<div class="td">(19.07.2019)</div>
+<div class="td">
+<img src="http://www.fips.ru/Archive2/Image/RUPATAP/NEW2018/100000/100000/101000/2018101713-s.jpg"></div>
+<div class="td">КАТАЛИЗАТОР, ПРЕДОТВРАЩАЮЩИЙ ПРОСКОК АММИАКА, СПРОЕКТИРОВАННЫЙ В КАЧЕСТВЕ ПЕРВОГО В СИСТЕМЕ СЕЛЕКТИВНОГО КАТАЛИТИЧЕСКОГО ВОССТАНОВЛЕНИЯ (SCR)</div>
+<div class="td">ЗИЗ</div>
+</a><a class="tr" id="26921b68f6c982942fa8bdc4b1d9ee47" data-index="47" href="document.xhtml?faces-redirect=true&amp;id=26921b68f6c982942fa8bdc4b1d9ee47">
+<div class="td">47.</div>
+<div class="td">2018102544</div>
+<div class="td">(05.09.2019)</div>
+<div class="td">
+<img src="http://www.fips.ru/Archive2/Image/RUPATAP/NEW2018/100000/100000/102000/2018102544-s.jpg"></div>
+<div class="td">ГИДРАВЛИЧЕСКАЯ ЭКСТРУЗИОННАЯ СИСТЕМА</div>
+<div class="td">ЗИЗ</div>
+</a><a class="tr" id="65a18d95d07a0ba8eb4ae178dc221904" data-index="48" href="document.xhtml?faces-redirect=true&amp;id=65a18d95d07a0ba8eb4ae178dc221904">
+<div class="td">48.</div>
+<div class="td">2018103237</div>
+<div class="td">(05.09.2019)</div>
+<div class="td">
+<img src="http://www.fips.ru/Archive2/Image/RUPATAP/NEW2018/100000/100000/103000/2018103237-s.jpg"></div>
+<div class="td">ВЫСОКОНАСЫЩЕННЫЙ СОПОЛИМЕРНЫЙ КАУЧУК, СОДЕРЖАЩИЙ НИТРИЛЬНЫЕ ГРУППЫ, КОМПОЗИЦИЯ СШИВАЕМОГО КАУЧУКА И СШИТЫЙ КАУЧУК</div>
+<div class="td">ЗИЗ</div>
+</a><a class="tr" id="818503be7edd788377f20e65b6844409" data-index="49" href="document.xhtml?faces-redirect=true&amp;id=818503be7edd788377f20e65b6844409">
+<div class="td">49.</div>
+<div class="td">2018103360</div>
+<div class="td">(29.08.2019)</div>
+<div class="td">
+<img src="http://www.fips.ru/Archive2/Image/RUPATAP/NEW2018/100000/100000/103000/2018103360-s.jpg"></div>
+<div class="td">ПИРРОЛО[2,3-D]ПИРИМИДИНОВОЕ СОЕДИНЕНИЕ ИЛИ ЕГО СОЛЬ</div>
+<div class="td">ЗИЗ</div>
+</a><a class="tr" id="5283e8545952ba85ea2b64796dee51be" data-index="50" href="document.xhtml?faces-redirect=true&amp;id=5283e8545952ba85ea2b64796dee51be">
+<div class="td">50.</div>
+<div class="td">2018106886</div>
+<div class="td">(05.09.2019)</div>
+<div class="td">
+<img src="http://www.fips.ru/Archive2/Image/RUPATAP/NEW2018/100000/100000/106000/2018106886-s.jpg"></div>
+<div class="td">КОМБИНИРОВАННЫЕ ТЕРАПИИ ДЛЯ ЛЕЧЕНИЯ РАКА</div>
+<div class="td">ЗИЗ</div>
+</a>
+</div>
+</div>
+</div>
+<div class="clear"></div><html xmlns="http://www.w3.org/1999/xhtml"><div class="modern-page-navigation"><span id="j_idt98:j_idt125" class="ui-commandlink ui-widget ui-state-disabled modern-page-previous">‹‹</span><span id="j_idt98:j_idt127" class="ui-commandlink ui-widget ui-state-disabled modern-page-previous">‹</span><span id="j_idt98:j_idt129:0:j_idt130" class="ui-commandlink ui-widget ui-state-disabled"><span class="modern-page-current modern-page-first ">1</span></span><a id="j_idt98:j_idt129:1:j_idt130" href="#" class="ui-commandlink ui-widget" onclick="PrimeFaces.ab({s:&quot;j_idt98:j_idt129:1:j_idt130&quot;,u:&quot;j_idt98&quot;});return false;"><span class=" ">2</span></a><a id="j_idt98:j_idt129:2:j_idt130" href="#" class="ui-commandlink ui-widget" onclick="PrimeFaces.ab({s:&quot;j_idt98:j_idt129:2:j_idt130&quot;,u:&quot;j_idt98&quot;});return false;"><span class=" ">3</span></a><a id="j_idt98:j_idt129:3:j_idt130" href="#" class="ui-commandlink ui-widget" onclick="PrimeFaces.ab({s:&quot;j_idt98:j_idt129:3:j_idt130&quot;,u:&quot;j_idt98&quot;});return false;"><span class=" ">4</span></a><a id="j_idt98:j_idt129:4:j_idt130" href="#" class="ui-commandlink ui-widget" onclick="PrimeFaces.ab({s:&quot;j_idt98:j_idt129:4:j_idt130&quot;,u:&quot;j_idt98&quot;});return false;"><span class=" ">5</span></a>
+        ...
+        <a id="j_idt98:j_idt295" href="#" class="ui-commandlink ui-widget" onclick="PrimeFaces.ab({s:&quot;j_idt98:j_idt295&quot;,u:&quot;j_idt98&quot;});return false;"><span class=" ">80</span></a><a id="j_idt98:j_idt132" href="#" class="ui-commandlink ui-widget modern-page-next" onclick="PrimeFaces.ab({s:&quot;j_idt98:j_idt132&quot;,u:&quot;j_idt98&quot;});return false;">›</a><a id="j_idt98:j_idt134" href="#" class="ui-commandlink ui-widget modern-page-next" onclick="PrimeFaces.ab({s:&quot;j_idt98:j_idt134&quot;,u:&quot;j_idt98&quot;});return false;">››</a>
+
+    <span class="toPage"><span class="toPageTitle">К странице:</span><input id="j_idt98:j_idt138" type="text" name="j_idt98:j_idt138" value="" class="toPageInputText" onkeyup="validatePaginatorValue(event,80, &quot;Не число&quot;, &quot;Страница вне диапазона&quot;)" onchange="PrimeFaces.ab({s:this,e:&quot;change&quot;,p:&quot;j_idt98:j_idt138&quot;});" /><input id="j_idt98:j_idt139" type="submit" name="j_idt98:j_idt139" value=" " style="background-image: url('/iiss/javax.faces.resource/images/arr-01.svg.xhtml');" class="toPageSubmit" onclick="PrimeFaces.ab({s:this,e:&quot;action&quot;,p:&quot;j_idt98:j_idt139&quot;,u:&quot;j_idt98&quot;});;return false" />
+    </span></div>
+</html><span id="j_idt98:top" class="doc-navi-top" style="background-image: url('/iiss/javax.faces.resource/images/up-01.svg.xhtml');"><a id="j_idt98:j_idt142" href="#" class="ui-commandlink ui-widget" onclick="PrimeFaces.ab({s:&quot;j_idt98:j_idt142&quot;});return false;"><span class="top"></span></a></span><div id="j_idt98:j_idt144" class="ui-tooltip ui-widget ui-tooltip-right"><div class="ui-tooltip-arrow"></div><div class="ui-tooltip-text ui-shadow ui-corner-all">К началу документа</div></div><script id="j_idt98:j_idt144_s" type="text/javascript">$(function(){PrimeFaces.cw("Tooltip","widget_j_idt98_j_idt144",{id:"j_idt98:j_idt144",showEffect:"fade",hideEffect:"fade",target:"j_idt98:top"});});</script><script id="j_idt98:j_idt145" type="text/javascript">onload = function() {PrimeFaces.ab({s:"j_idt98:j_idt145",f:"j_idt98",pa:arguments[0]});};$(function() {onload();});</script><input type="hidden" name="javax.faces.ViewState" id="j_id1:javax.faces.ViewState:2" value="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" autocomplete="off" />
+</form></div></div></div><div id="sidebar" class="col-md-3"><div class="typicalsbblock"><div class="title">Информационно-поисковая система</div>
+<form id="sidebarForm" name="sidebarForm" method="post" action="/iiss/search_res.xhtml" enctype="application/x-www-form-urlencoded">
+<input type="hidden" name="sidebarForm" value="sidebarForm" />
+
+                <ul id="sidebarMenu">
+                    <li><a href="db.xhtml">Выбор БД для поиска</a></li>
+                    <li><a id="sidebarForm:searchLink" href="#" onclick="PrimeFaces.ab({s:this,e:&quot;action&quot;,p:&quot;sidebarForm&quot;});;return false">Поиск</a></li>
+                    <li><a id="sidebarForm:searchResLink" href="#" onclick="PrimeFaces.ab({s:this,e:&quot;action&quot;,p:&quot;sidebarForm&quot;});;return false">Найденные документы</a></li>
+                    <li><a id="sidebarForm:documentLink" href="#" onclick="PrimeFaces.ab({s:this,e:&quot;action&quot;,p:&quot;sidebarForm&quot;});;return false">Документ</a></li>
+                    <li><a href="settings.xhtml">Настройки</a></li>
+                    <li><a href="%D0%98%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BA%D1%86%D0%B8%D1%8F%20%D0%BF%D0%BE%20%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B5%20%D1%81%20%D0%B8%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%86%D0%B8%D0%BE%D0%BD%D0%BD%D1%8B%D0%BC%D0%B8%20%D1%80%D0%B5%D1%81%D1%83%D1%80%D1%81%D0%B0%D0%BC%D0%B8.doc">Скачать инструкцию</a></li>
+                </ul>
+            <hr class="hrStandard" />
+            <ul>
+                    <li><b><a href="login.xhtml">Войти</a></b></li>
+            </ul><input type="hidden" name="javax.faces.ViewState" id="j_id1:javax.faces.ViewState:3" value="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" autocomplete="off" />
+</form></div></div><div id="j_idt187" class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-shadow ui-hidden-container ui-dialog-absolute" style="margin-top: 65px"><div class="ui-dialog-titlebar ui-widget-header ui-helper-clearfix ui-corner-top"><span id="j_idt187_title" class="ui-dialog-title">Ошибка</span><a href="#" class="ui-dialog-titlebar-icon ui-dialog-titlebar-close ui-corner-all" aria-label="Close"><span class="ui-icon ui-icon-closethick"></span></a></div><div class="ui-dialog-content ui-widget-content">Должна быть выбрана как минимум одна поисковая база!</div><div class="ui-dialog-footer ui-widget-content"><span><button id="j_idt189" name="j_idt189" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" onclick="PrimeFaces.bcn(this,event,[function(event){PF('goToSearchPageError').hide()},function(event){PrimeFaces.ab({s:&quot;j_idt189&quot;});return false;}]);" type="submit"><span class="ui-button-text ui-c">Закрыть</span></button><script id="j_idt189_s" type="text/javascript">PrimeFaces.cw("CommandButton","widget_j_idt189",{id:"j_idt189"});</script></span></div></div><script id="j_idt187_s" type="text/javascript">$(function(){PrimeFaces.cw("Dialog","goToSearchPageError",{id:"j_idt187",modal:true,width:"500",height:"100",showEffect:"fade",hideEffect:"fade"});});</script><div id="j_idt190" class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-shadow ui-hidden-container ui-dialog-absolute" style="margin-top: 65px"><div class="ui-dialog-titlebar ui-widget-header ui-helper-clearfix ui-corner-top"><span id="j_idt190_title" class="ui-dialog-title">Ошибка</span><a href="#" class="ui-dialog-titlebar-icon ui-dialog-titlebar-close ui-corner-all" aria-label="Close"><span class="ui-icon ui-icon-closethick"></span></a></div><div class="ui-dialog-content ui-widget-content">Должны быть заданы условия поиска!</div><div class="ui-dialog-footer ui-widget-content"><span><button id="j_idt192" name="j_idt192" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" onclick="PrimeFaces.bcn(this,event,[function(event){PF('goToSearchDocsPageError').hide()},function(event){PrimeFaces.ab({s:&quot;j_idt192&quot;});return false;}]);" type="submit"><span class="ui-button-text ui-c">Закрыть</span></button><script id="j_idt192_s" type="text/javascript">PrimeFaces.cw("CommandButton","widget_j_idt192",{id:"j_idt192"});</script></span></div></div><script id="j_idt190_s" type="text/javascript">$(function(){PrimeFaces.cw("Dialog","goToSearchDocsPageError",{id:"j_idt190",modal:true,width:"500",height:"100",showEffect:"fade",hideEffect:"fade"});});</script></div></div></div>
+
+    <script>
+        var arr = [];
+
+        fipsStore = JSON.parse(localStorage.getItem('fips_docs_rows'));
+        if (typeof fipsStore === 'undefined' ||  fipsStore === null ||
+            (fipsStore .arr !== null && fipsStore.date !== null && Date.parse(fipsStore.data) < new Date())) {
+            if (fipsStore !== null ) window.localStorage.removeItem('fips_docs_rows');
+            arr = [];
+        } else arr = fipsStore.arr;
+
+        boldCells();
+        normalCells(arr);
+
+        $(".bgtable div.table").find("a.tr").click(function () {
+            $(this).find("div.td").eq(2).css("font-weight", "normal");
+            $(this).find("div.td").eq(1).css("font-weight", "normal");
+            $(this).find("div.td").eq(5).css("font-weight", "normal");
+
+            var row = $(this).find("div.td").eq(1).html();
+            arr.push(row);
+            var myDate = new Date();
+            //add a day to the date
+            myDate.setDate(myDate.getDate() + 1);
+            window.localStorage.setItem('fips_docs_rows', JSON.stringify({till: myDate,arr: arr}))
+        });
+
+        function normalCells(arr) {
+            for(var i = 0; i < arr.length; i++) {
+                $(".bgtable div.table > a.tr").each(function () {
+                    if($(this).find("div.td").eq(1).html() == arr[i]) {
+                        $(this).find("div.td").eq(2).css("font-weight", "normal");
+                        $(this).find("div.td").eq(1).css("font-weight", "normal");
+                        $(this).find("div.td").eq(5).css("font-weight", "normal");
+                    }
+                });
+            }
+        }
+        function boldCells() {
+            $(".bgtable div.table > a.tr").each(function () {
+                $(this).find("div.td").eq(2).css("font-weight", "bold");
+                $(this).find("div.td").eq(1).css("font-weight", "bold");
+                $(this).find("div.td").eq(5).css("font-weight", "bold");
+            });
+        };
+
+        function scroll(index){
+            console.log('begin scroll');
+            $([document.documentElement, document.body]).animate({
+                scrollTop: $('.bgtable').find('a[data-index="'+index+'"]').offset().top
+            }, 0);
+        }
+
+        if (false){
+            PF('goToSearchDocsPageError').show();
+        }
+
+
+    </script><div id="footer" class="container-fluid"><div class="cont"><div class="row"><div class="col-md-4"><span class="toptitle no-margin-top-mobile">КОНТАКТЫ:</span>
+                    <br />
+                    <br /><span class="text">Бережковская наб., д. 30, корп. 1, Москва, Г-59, ГСП-3, 125993, РФ</span><span class="text">
+                        <br />
+                        E-mail:
+                        <a href="mailto:fips@rupto.ru">fips@rupto.ru</a></span>
+                    <br /><span class="text">Тел.: +7 (499) 240-6015, факс: +7 (495) 531-6318</span></div><div class="col-md-5"><span class="toptitle">ВРЕМЯ РАБОТЫ:</span>
+                    <br />
+                    <br /><span class="text"><span class="row"><div class="col-md-6">Режим рабочего времени ФИПС:
+                                <br />Понедельник - Четверг: 9:30 – 18:15
+                                <br />Пятница: 9:30 – 17:00
+                                <br />Суббота, воскресенье, нерабочие и
+                                <br />праздничные дни – выходные дни.</div><div class="col-md-6">Режим работы окон приема документов:
+                                <br />Понедельник – Четверг: 9:00 – 17:45
+                                <br />Пятница: 9:00 – 16:30
+                                <br />Без перерыва на обед</div></span></span></div><div class="col-md-3"><span class="toptitle">МЫ В СОЦСЕТЯХ:</span>
+                    <br />
+                    <br /><span class="text"><span class="soc"><a href="https://www.facebook.com/fips.ru/"><span class="ss s4"></span></a><a href="https://www.instagram.com/fipsru/"><span class="ss s1"></span></a><a href="https://twitter.com/rospatent1"><span class="ss s2"></span></a></span></span></div></div><div class="clear"></div><div class="row copy-row"><div class="col-md-2 no-on-mobile"><span class="copy">© 2009 - 2019 ФИПС</span></div><div class="col-md-10"><div class="menu"><a href="/news/">Новости</a>
+                             
+
+                        <a href="/documents/" class="root-item">Документы</a>
+                             
+
+                        <a href="/about/vakansii/index.php" class="root-item">Вакансии</a>
+                             
+
+                        <a href="/glossariy/" class="root-item">Глоссарий</a>
+                             
+
+                        <a href="/elektronnye-servisy/internet-resursy/index.php" class="root-item">Ссылки</a>
+                             
+
+                        <a href="/faq/" class="root-item">Ответы на вопросы</a>
+                             
+
+                        <a href="/about/obratnaya-svyaz/index.php" class="root-item">О сайте</a>
+                             
+
+                        <a href="/sitemap.php" class="root-item">Карта сайта</a>
+                             
+
+                        <a href="/contacts/kak-proekhat.php" class="root-item">Как проехать</a>
+                             
+
+                        <a href="mailto:fips@rupto.ru" class="root-item">Сообщить о ошибке</a></div></div></div></div></div>
+</html>
